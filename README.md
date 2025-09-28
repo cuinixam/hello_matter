@@ -1,0 +1,1 @@
+This is simple temperature/humidity Matter device implemented using the Espressif SDK on a esp32-h2 micro-controller with SHT31-D.

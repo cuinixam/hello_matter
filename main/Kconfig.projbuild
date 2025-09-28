@@ -1,0 +1,31 @@
+menu "Matter Device Configuration"
+
+    config MATTER_COMPONENT_LIGHT
+        bool "Matter Component Light"
+        default n
+        help
+            Select if your matter component is a light
+
+    config MATTER_COMPONENT_TEMP_SENSOR
+        bool "Matter Component Temperature Sensor"
+        default y
+        help
+            Select if your matter component is a temperature sensor
+    
+endmenu
+
+menu "Temperature Sensor HW Configuration"
+
+    config SHTC3_I2C_SDA_PIN
+        int "I2C SDA Pin"
+        default 5
+        help
+            GPIO number for I2C master data
+
+    config SHTC3_I2C_SCL_PIN
+        int "I2C SCL Pin"
+        default 4
+        help
+            GPIO number for I2C master clock
+
+endmenu
